@@ -10,12 +10,6 @@
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -43,4 +37,14 @@
   background-color: #04AA6D;
   color: white;
   border-radius: 5px;
+}
+.topnav p{
+
+  position: relative;
+  justify-content: center;
+  color:white;
+  text-align:center;
+  top:-10px;
+  right: 13%;
+
 }

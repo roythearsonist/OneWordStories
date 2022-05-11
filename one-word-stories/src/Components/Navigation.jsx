@@ -8,6 +8,7 @@
         <a href="https://github.com/CharlieS1103/OneWordStories" rel="noreferrer" target="_blank">Github</a>
           <a href="contact">Contact</a>
           <a href="about">About</a>
+          <p><h1>One Word Stories</h1></p>
         </div>
   );
  }
