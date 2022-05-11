@@ -4,7 +4,6 @@
   return (
     <div className="nav-container">     
     <img src={logo} alt="logo" className="logo" />
-        <p className="heading">One Word Stories</p>
         <div className="topnav">
           <a className="active" href="/">Home</a>
         <a href="https://github.com/CharlieS1103/OneWordStories" rel="noreferrer" target="_blank">Github</a>
