@@ -7,7 +7,7 @@ function MainView() {
     <div className="MainView">
       <div className='MainView-container'>
         <Modal></Modal>
-        <button className='add-story-button' ></button>
+        <button className='add-story-button button'>+</button>
         <div className='content-grid-container'>
           <div className='content-grid'>
 

@@ -1,15 +1,21 @@
 .MainView {
   text-align: center;
 }
-.add-story-button {
+.button {
   width: 75px;
   height: 75px;
   border-radius: 100px;
-  background-color: #303236;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--text);
   font-size: 18px;
   border:unset;
+}
+.add-story-button{
   position:absolute;
   bottom:2%;
   left:87%;
+}
+.button:active{
+  background-color: var(--text);
+  color: var(--secondary);
 }

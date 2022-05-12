@@ -5,12 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary);
 }
 :root{
   --primary: #303236;
   --text: #f2f2f2;
-  --secondary: #04AA6D;
-  --card: #f2f2f2; /* TBD */
+  --secondary: #339989;
+  --card: #131515; 
+  --sub-text: #7de2d1;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
