@@ -7,7 +7,7 @@ function MainView() {
     <div className="MainView">
       <div className='MainView-container'>
         <Modal></Modal>
-        <button className='add-story-button' onClick={displayModal()}></button>
+        <button className='add-story-button' ></button>
         <div className='content-grid-container'>
           <div className='content-grid'>
 
@@ -18,9 +18,5 @@ function MainView() {
         </div>
     </div>
   );
-}
-function displayModal(){
-  const modal = document.getElementsByClassName('modal')[0];
-  modal.style.display = 'flex';
 }
 export default MainView;

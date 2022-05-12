@@ -1,8 +1,12 @@
 .modal{
-    display:none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--secondary)
+    background-color: var(--secondary);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
 }

@@ -1,7 +1,7 @@
 import "./ComponentCSS/modal.css";
 function Modal(props){
     return (
-        <div className="modal" aria-hidden="true">
+        <div className="modal" aria-hidden="true" style={{ display:"none" }}>
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
