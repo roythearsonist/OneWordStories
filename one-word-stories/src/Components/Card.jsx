@@ -1,5 +1,5 @@
 
-import {Modal} from '../Components'
+
 import './ComponentCSS/card.css';
 function Card(props){
 
@@ -9,7 +9,6 @@ function Card(props){
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text">{props.text}</p>
                 <button className="popup-modal-button">Add to Story</button> 
-                <Modal text={props.text}></Modal>
             </div>
         </div>
     );
