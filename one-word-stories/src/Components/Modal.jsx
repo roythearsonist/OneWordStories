@@ -1,24 +1,42 @@
 import "./ComponentCSS/modal.css";
-function Modal(props){
-    return (
-        <div className="modal" aria-hidden="true" style={{ display:"none" }}>
-            <div className="modal-dialog" role="document">
+import React, { useState } from 'react';
+function Modal(props) {
+        const [isOpen, setOpen] = useState(0);
+        const [text] = useState(props.text);
+
+ 
+       
+        const  openModal = () => {
+        setOpen(true);
+    }
+    const closeModal = () => {
+     setOpen(false);
+    }
+    
+    
+    if(isOpen){
+        return(
+ <div>
+            <button onClick={openModal}>Add to Story</button>
+             <div className="modal">
                 <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Add to Story</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div className="modal-body">
-                        {props.text}
-                    </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
+                    <span className="close" onClick={closeModal}>x</span>
+                    <h2>Add to Story</h2>
+                    <textarea rows="4" cols="50" onChange={(e) => this.setState({ text: e.target.value })}>{text}</textarea>
+
         </div>
-    );
-}
+        </div>
+        </div>
+        )
+    }else{
+return(
+    <div>
+        <button onClick={openModal}>Add to Story</button>
+    </div>
+)
+        }
+   
+         
+        }
+  
 export default Modal;

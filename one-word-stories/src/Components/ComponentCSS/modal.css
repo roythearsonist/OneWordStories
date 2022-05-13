@@ -9,4 +9,17 @@
     z-index: 1;
     width: 400px;
     height: 400px;
+    display:flex;
+    flex-direction: column;
+}
+.submit-text-button{
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--text);
+    cursor: pointer;
+    margin-top: 10px;
+    width: 30%;
+    align-items:right;
+    height: 6vh;
+    background-color:var(--primary);
 }

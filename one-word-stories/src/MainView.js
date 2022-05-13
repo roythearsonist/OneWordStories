@@ -1,12 +1,11 @@
 
 import './MainView.css';
-import {Card, Modal} from './Components'
+import {Card} from './Components'
 
 function MainView() {
   return (
     <div className="MainView">
       <div className='MainView-container'>
-        <Modal></Modal>
         <button className='add-story-button button'>+</button>
         <div className='content-grid-container'>
           <div className='content-grid'>
