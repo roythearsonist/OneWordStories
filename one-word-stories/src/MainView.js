@@ -1,23 +1,36 @@
 
 import './MainView.css';
+import React, { useState, useEffect } from 'react';
 import {Card} from './Components'
 import { invoke } from '@tauri-apps/api/tauri'
 function MainView() {
+  const fetch_stories = async () => {
+     let stories = await invoke('fetch_stories');
+    return stories;
+  }
+  const [stories, setStories] = useState([]);
+ useEffect(() => { 
+  fetch_stories().then(stories => setStories(stories));
+  }, []);
+
+
   return (
     <div className="MainView">
       <div className='MainView-container'>
         <button className='add-story-button button' onClick={() => {
-          invoke('api_call_test')
+          fetch_stories()
         }}>+</button>
         <div className='content-grid-container'>
-          <div className='content-grid'>
+          {stories.map((story) => {
+            return <Card text={story.body.map((word) => {return word+" "})} title={story.title} />
+          })}
 
-          <Card title="test" text="testtttt"></Card>
+          
           </div>
         </div>
 
         </div>
-    </div>
   );
 }
+
 export default MainView;
